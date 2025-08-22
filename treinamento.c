@@ -21,3 +21,5 @@ printf("nome do aluno: %s - matricula:%d", nome, matricula);
 printf("Idade %d - Altura: %f", idade, altura);
 
 return 0;
+        
+    }
