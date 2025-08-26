@@ -35,7 +35,7 @@ int main (){
 
     printf ("Digite o PIB da cidade:\n");
     scanf ("%f", &PIB);
-    printf ("\n\n")
+    printf ("\n\n");
 
     printf ("Vamos para a carta 2!\n\n");
     printf("CARTA 2\n\n");
@@ -43,8 +43,12 @@ int main (){
     printf ("Digite o estado de sua carta:\n");
     scanf (" %c", &estado);
 
+      while (getchar() != '\n');
+
     printf ("Digite o código da carta:\n");
     scanf ("%s", &codigo_da_carta);
+
+      while (getchar() != '\n');
 
     printf ("Digite o nome da cidade:\n");
     scanf (" %s", &nome_da_cidade);
@@ -70,4 +74,3 @@ int main (){
 
 }
     
-
