@@ -11,6 +11,7 @@ int main (){
 
     printf ("Super Trunfo de cidades\n\n\n");
     printf ("Vamos lá!\n\n");
+    printf ("GO!\n\n");
     printf ("Carta 1\n\n");
 
 
@@ -41,6 +42,8 @@ int main (){
     scanf ("%f", &PIB);
     printf ("\n\n");
 
+
+
     printf ("Vamos para a carta 2!\n\n");
     printf("CARTA 2\n\n");
 
@@ -69,10 +72,21 @@ int main (){
     printf ("Digite o PIB da cidade:\n");
     scanf ("%f", &PIB);
 
+
+    printf ("\n\n");
+    printf ("obrigado por jogar!\n\n\n");
+
  
-    
+
 
     return 0;
+
+
+
+
+
+}
+    
 
 
 
