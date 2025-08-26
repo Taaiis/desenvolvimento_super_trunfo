@@ -2,7 +2,7 @@
 
 
 int main (){
-   char estado [8]//representando um dos oito estados entre A a H, codigo_da_carta [4]//a letra do estado seguida de um número de 01 a 04, nome_da_cidade [50];
+   char estado [8]//representando um dos oito estados entre A a H; codigo_da_carta [4]//a letra do estado seguida de um número de 01 a 04; nome_da_cidade [50];
    int habitantes, numeros_de_pontos_turisticos;
    float area_da_cidade, PIB;
 
