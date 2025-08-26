@@ -2,15 +2,17 @@
 
 
 int main (){
-   char estado [8]//representando um dos oito estados entre A a H; 
-   char codigo_da_carta [4]//a letra do estado seguida de um número de 01 a 04; 
+   char estado [8];//representando um dos oito estados, apenas uma letra entre A a H;
+   char codigo_da_carta [8] [4];//a letra do estado seguida de um número de 01 a 04;
    char nome_da_cidade [50];
    int habitantes, numeros_de_pontos_turisticos;
    float area_da_cidade, PIB;
 
+
     printf ("Super Trunfo de cidades\n\n\n");
     printf ("Vamos lá!\n\n");
     printf ("Carta 1\n\n");
+
 
 
     printf ("Digite o estado de sua carta:\n");
@@ -19,7 +21,7 @@ int main (){
     while (getchar() != '\n');
 
     printf ("Digite o código da carta:\n");
-    scanf ("%s", &codigo_da_carta);
+    scanf ("%s", codigo_da_carta);
     
     while (getchar() != '\n');
 
@@ -68,11 +70,15 @@ int main (){
     scanf ("%f", &PIB);
 
  
+    
 
     return 0;
 
 
 
 
+
 }
+    
+
     
