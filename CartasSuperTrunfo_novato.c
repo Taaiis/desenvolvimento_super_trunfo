@@ -74,7 +74,7 @@ int main (){
 
 
     printf ("\n\n");
-    printf ("Fim do jogar!\n\n\n");
+    printf ("Fim do jogo!\n\n\n");
 
  
 
