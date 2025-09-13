@@ -33,17 +33,23 @@ int main (){
     printf ("Digite o número de habitantes:\n");
     scanf ("%d", &habitantes);
 
+    while (getchar() != '\n');
+
     printf ("Digite o número de pontos turísticos:\n");
     scanf ("%d", &numeros_de_pontos_turisticos);
+
+    while (getchar() != '\n');
 
     printf ("Digite a área da cidade:\n");
     scanf ("%f", &area_da_cidade);
 
+    while (getchar() != '\n');
+
     printf ("Digite o PIB da cidade:\n");
-    scanf ("%f", &PIB);
+    scanf ("%f", &pib);
 
    densidade_populacional = habitantes / area_da_cidade;
-   pib_per_capita = PIB / habitantes;
+   pib_per_capita = pib / habitantes;
 
    printf ("Densidade populacional: %2.f hab/km²\n", densidade_populacional);
    printf ("PIB per capita: %2.f\n", pib_per_capita);
@@ -80,10 +86,10 @@ int main (){
     scanf ("%f", &area_da_cidade);
 
     printf ("Digite o PIB da cidade:\n");
-    scanf ("%f", &PIB);
+    scanf ("%f", &pib);
 
    densidade_populacional = habitantes / area_da_cidade;
-   pib_per_capita = PIB / habitantes;
+   pib_per_capita = pib / habitantes;
 
    printf ("Densidade populacional: %2.f hab/km²\n", densidade_populacional);
    printf ("PIB per capita: %2.f\n", pib_per_capita);
