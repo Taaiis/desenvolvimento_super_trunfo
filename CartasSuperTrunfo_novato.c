@@ -8,10 +8,7 @@ int main (){
    int habitantes, numeros_de_pontos_turisticos;
    float area_da_cidade, PIB;
    float densidade_populacional, PIB per capita;
-
-   densidade = habitantes / area_da_cidade;
-   PIB_per_capita = PIB / habitantes;
-
+   
 
     printf ("Super Trunfo de cidades\n\n\n");
     printf ("Vamos lá!\n\n");
@@ -47,6 +44,10 @@ int main (){
 
    printf ("Densidade populacional: %2.f hab/km²\n", densidade);
    printf ("PIB per capita: %2.f\n", PIB per capita);
+
+   densidade = habitantes / area_da_cidade;
+   PIB_per_capita = PIB / habitantes;
+
    
     printf ("\n\n");
 
@@ -82,6 +83,10 @@ int main (){
 
    printf ("Densidade populacional: %2.f hab/km²\n", densidade);
    printf ("PIB per capita: %2.f\n", PIB per capita);
+
+   densidade = habitantes / area_da_cidade;
+   PIB_per_capita = PIB / habitantes;
+
 
 
     printf ("\n\n");
