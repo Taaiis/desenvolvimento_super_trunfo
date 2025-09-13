@@ -6,8 +6,8 @@ int main (){
    char codigo_da_carta [8] [4];//a letra do estado seguida de um número de 01 a 04;
    char nome_da_cidade [50];
    int habitantes, numeros_de_pontos_turisticos;
-   float area_da_cidade, PIB;
-   float densidade_populacional, PIB per capita;
+   float area_da_cidade, pib;
+   float densidade_populacional, pib_per_capita;
    
 
     printf ("Super Trunfo de cidades\n\n\n");
@@ -42,11 +42,12 @@ int main (){
     printf ("Digite o PIB da cidade:\n");
     scanf ("%f", &PIB);
 
-   printf ("Densidade populacional: %2.f hab/km²\n", densidade);
-   printf ("PIB per capita: %2.f\n", PIB per capita);
-
    densidade = habitantes / area_da_cidade;
    PIB_per_capita = PIB / habitantes;
+
+   printf ("Densidade populacional: %2.f hab/km²\n", densidade);
+   printf ("PIB per capita: %2.f\n", pib_per_capita);
+
 
    
     printf ("\n\n");
@@ -81,11 +82,12 @@ int main (){
     printf ("Digite o PIB da cidade:\n");
     scanf ("%f", &PIB);
 
-   printf ("Densidade populacional: %2.f hab/km²\n", densidade);
-   printf ("PIB per capita: %2.f\n", PIB per capita);
-
    densidade = habitantes / area_da_cidade;
    PIB_per_capita = PIB / habitantes;
+
+   printf ("Densidade populacional: %2.f hab/km²\n", densidade);
+   printf ("PIB per capita: %2.f\n", pib_per_capita);
+
 
 
 
