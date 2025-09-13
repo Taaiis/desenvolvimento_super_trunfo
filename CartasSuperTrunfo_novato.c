@@ -76,14 +76,22 @@ int main (){
     printf ("Digite o nome da cidade:\n");
     scanf (" %s", &nome_da_cidade);
 
+   while (getchar() != '\n');
+
     printf ("Digite o número de habitantes:\n");
     scanf ("%d", &habitantes);
+
+   while (getchar() != '\n');
 
     printf ("Digite o número de pontos turísticos:\n");
     scanf ("%d", &numeros_de_pontos_turisticos);
 
+   while (getchar() != '\n');
+
     printf ("Digite a área da cidade:\n");
     scanf ("%f", &area_da_cidade);
+
+   while (getchar() != '\n');
 
     printf ("Digite o PIB da cidade:\n");
     scanf ("%f", &pib);
