@@ -7,16 +7,16 @@ int main (){
    char codigo_da_carta1 [8][4];//a letra do estado seguida de um número de 01 a 04;
    char nome_da_cidade1 [50];
    int  numeros_de_pontos_turisticos1;
-   double densidade_populacional1, pib_per_capita1;
-   double area_da_cidade1, pib1, habitantes1;
+   float densidade_populacional1, pib_per_capita1;
+   float area_da_cidade1, pib1, habitantes1;
 
    //Váriaveis para carta 2
    char estados2 [8];//representando um dos oito estados, apenas uma letra entre A a H;
    char codigo_da_carta2 [8][4];//a letra do estado seguida de um número de 01 a 04;
    char nome_da_cidade2 [50];
    int  numeros_de_pontos_turisticos2;
-   double densidade_populacional2, pib_per_capita2;
-   double area_da_cidade2, pib2, habitantes2;
+   float densidade_populacional2, pib_per_capita2;
+   float area_da_cidade2, pib2, habitantes2;
    
    
 
@@ -40,7 +40,7 @@ int main (){
 
 
     printf ("Digite o número de habitantes:\n");
-    scanf ("%lf", &habitantes1);
+    scanf ("%f", &habitantes1);
 
 
     printf ("Digite o número de pontos turísticos:\n");
@@ -48,11 +48,11 @@ int main (){
 
 
     printf ("Digite a área da cidade:\n");
-    scanf ("%lf", &area_da_cidade1);
+    scanf ("%f", &area_da_cidade1);
 
 
     printf ("Digite o PIB da cidade:\n");
-    scanf ("%lf", &pib1);
+    scanf ("%f", &pib1);
 
 
 
@@ -86,7 +86,7 @@ int main (){
    while (getchar() != '\n');
 
     printf ("Digite o número de habitantes:\n");
-    scanf ("%lf", &habitantes2);
+    scanf ("%f", &habitantes2);
 
    
 
@@ -96,12 +96,12 @@ int main (){
    
 
     printf ("Digite a área da cidade:\n");
-    scanf (" %lf", &area_da_cidade2);
+    scanf (" %f", &area_da_cidade2);
 
    
 
     printf ("Digite o PIB da cidade:\n");
-    scanf (" %lf", &pib2);
+    scanf (" %f", &pib2);
 
 
     
