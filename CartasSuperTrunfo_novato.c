@@ -60,7 +60,7 @@ int main (){
    pib_per_capita1 = pib1 / habitantes1;
 
    printf ("Densidade populacional é: %.2f hab/km²\n", densidade_populacional1);
-   printf ("PIB per capita é: %.2f bilhões de reais\n", pib_per_capita1);
+   printf ("PIB per capita é: %.2f reais\n", pib_per_capita1);
 
 
    
@@ -110,7 +110,7 @@ int main (){
 
 
    printf ("Densidade populacional é: %.2f hab/km²\n", densidade_populacional2);
-   printf ("PIB per capita é : %.2f bilhões de reais\n", pib_per_capita2);
+   printf ("PIB per capita é : %.2f reais\n", pib_per_capita2);
 
 
 
