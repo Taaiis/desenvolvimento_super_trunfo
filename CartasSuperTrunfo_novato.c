@@ -3,7 +3,7 @@
 
 int main (){
   //Váriaveis para carta 1
-   char estados1;//representando um dos oito estados, apenas uma letra entre A a H;
+   char estado1;//representando um dos oito estados, apenas uma letra entre A a H;
    char codigo_da_carta1 [4];//a letra do estado seguida de um número de 01 a 04;
    char nome_da_cidade1 [50];
    int  numeros_de_pontos_turisticos1, habitantes1;
@@ -11,8 +11,8 @@ int main (){
   
 
    //Váriaveis para carta 2
-   char estados2 [8];//representando um dos oito estados, apenas uma letra entre A a H;
-   char codigo_da_carta2 [8][4];//a letra do estado seguida de um número de 01 a 04;
+   char estado2;//representando um dos oito estados, apenas uma letra entre A a H;
+   char codigo_da_carta2 [4];//a letra do estado seguida de um número de 01 a 04;
    char nome_da_cidade2 [50];
    int  numeros_de_pontos_turisticos2, habitantes2;
    float densidade_populacional2, pib_per_capita2, area_da_cidade2, pib2;
@@ -28,7 +28,7 @@ int main (){
 
 
     printf ("Digite o estado de sua carta:\n");
-    scanf (" %c", &estados1);
+    scanf (" %c", &estado1);
 
 
     printf ("Digite o código da carta:\n");
@@ -72,18 +72,18 @@ int main (){
     printf("== Carta 2 ==\n\n");
 
     printf ("Digite o estado de sua carta:\n");
-    scanf (" %c", &estados2 );
+    scanf (" %c", &estado2 );
 
 
     printf ("Digite o código da carta:\n");
-    scanf ("%s", codigo_da_carta2[0]);
+    scanf (" %s", codigo_da_carta2);
 
-    while (getchar() != '\n');
+   
   
     printf ("Digite o nome da cidade:\n");
-    scanf ("%[^\n]", nome_da_cidade2);
+    scanf (" %[^\n]", nome_da_cidade2);
 
-   while (getchar() != '\n');
+   
 
     printf ("Digite o número de habitantes:\n");
     scanf ("%d", &habitantes2);
