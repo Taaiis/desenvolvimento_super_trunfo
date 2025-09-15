@@ -2,13 +2,24 @@
 
 
 int main (){
-   char estado [8];//representando um dos oito estados, apenas uma letra entre A a H;
-   char codigo_da_carta [8] [4];//a letra do estado seguida de um número de 01 a 04;
-   char nome_da_cidade [50];
-   int habitantes, numeros_de_pontos_turisticos;
-   float area_da_cidade, pib;
-   float densidade_populacional, pib_per_capita;
+  //Váriaveis para carta 1
+   char estados1 [8];//representando um dos oito estados, apenas uma letra entre A a H;
+   char codigo_da_carta1 [8][4];//a letra do estado seguida de um número de 01 a 04;
+   char nome_da_cidade1 [50];
+   int  numeros_de_pontos_turisticos1;
+   double densidade_populacional1, pib_per_capita1;
+   double area_da_cidade1, pib1, habitantes1;
+
+   //Váriaveis para carta 2
+   char estados2 [8];//representando um dos oito estados, apenas uma letra entre A a H;
+   char codigo_da_carta2 [8][4];//a letra do estado seguida de um número de 01 a 04;
+   char nome_da_cidade2 [50];
+   int  numeros_de_pontos_turisticos2;
+   double densidade_populacional2, pib_per_capita2;
+   double area_da_cidade2, pib2, habitantes2;
    
+   
+
 
     printf ("Super Trunfo de cidades\n\n\n");
     printf ("Vamos lá!\n\n");
@@ -16,97 +27,96 @@ int main (){
     printf ("Carta 1\n\n");
 
 
-
     printf ("Digite o estado de sua carta:\n");
-    scanf (" %c", &estado);
+    scanf (" %*c%c", &estados1[0]);
 
-    while (getchar() != '\n');
 
     printf ("Digite o código da carta:\n");
-    scanf ("%s", codigo_da_carta);
+    scanf (" %3s", codigo_da_carta1[0]);
     
-    while (getchar() != '\n');
 
     printf ("Digite o nome da cidade:\n");
-    scanf (" %s", &nome_da_cidade);
+    scanf (" %[^\n]", nome_da_cidade1);
+
 
     printf ("Digite o número de habitantes:\n");
-    scanf ("%d", &habitantes);
+    scanf ("%lf", &habitantes1);
 
-    while (getchar() != '\n');
 
     printf ("Digite o número de pontos turísticos:\n");
-    scanf ("%d", &numeros_de_pontos_turisticos);
+    scanf ("%d", &numeros_de_pontos_turisticos1);
 
-    while (getchar() != '\n');
 
     printf ("Digite a área da cidade:\n");
-    scanf ("%f", &area_da_cidade);
+    scanf ("%lf", &area_da_cidade1);
 
-    while (getchar() != '\n');
 
     printf ("Digite o PIB da cidade:\n");
-    scanf ("%f", &pib);
+    scanf ("%lf", &pib1);
 
-   densidade_populacional = habitantes / area_da_cidade;
-   pib_per_capita = pib / habitantes;
 
-   printf ("Densidade populacional: %2.f hab/km²\n", densidade_populacional);
-   printf ("PIB per capita: %2.f\n", pib_per_capita);
+
+   densidade_populacional1 = habitantes1 / area_da_cidade1;
+   pib_per_capita1 = pib1 / habitantes1;
+
+   printf ("Densidade populacional é: %.2f hab/km²\n", densidade_populacional1);
+   printf ("PIB per capita é: %.2f bilhões de reais\n", pib_per_capita1);
 
 
    
     printf ("\n\n");
-
+  
 
 
     printf ("Vamos para a carta 2!\n\n");
     printf("CARTA 2\n\n");
 
     printf ("Digite o estado de sua carta:\n");
-    scanf (" %c", &estado);
+    scanf (" %*c%c", &estados2 [0]);
 
-      while (getchar() != '\n');
 
     printf ("Digite o código da carta:\n");
-    scanf ("%s", &codigo_da_carta);
+    scanf ("%3s", codigo_da_carta2[0]);
 
-      while (getchar() != '\n');
-
+    while (getchar() != '\n');
+  
     printf ("Digite o nome da cidade:\n");
-    scanf (" %s", &nome_da_cidade);
+    scanf ("%[^\n]", nome_da_cidade2);
 
    while (getchar() != '\n');
 
     printf ("Digite o número de habitantes:\n");
-    scanf ("%d", &habitantes);
+    scanf ("%lf", &habitantes2);
 
-   while (getchar() != '\n');
+   
 
     printf ("Digite o número de pontos turísticos:\n");
-    scanf ("%d", &numeros_de_pontos_turisticos);
+    scanf (" %d", &numeros_de_pontos_turisticos2);
 
-   while (getchar() != '\n');
+   
 
     printf ("Digite a área da cidade:\n");
-    scanf ("%f", &area_da_cidade);
+    scanf (" %lf", &area_da_cidade2);
 
-   while (getchar() != '\n');
+   
 
     printf ("Digite o PIB da cidade:\n");
-    scanf ("%f", &pib);
+    scanf (" %lf", &pib2);
 
-   densidade_populacional = habitantes / area_da_cidade;
-   pib_per_capita = pib / habitantes;
 
-   printf ("Densidade populacional: %2.f hab/km²\n", densidade_populacional);
-   printf ("PIB per capita: %2.f\n", pib_per_capita);
+    
+   densidade_populacional2 = habitantes2 / area_da_cidade2;
+   pib_per_capita2 = pib2 / habitantes2;
+
+
+   printf ("Densidade populacional é: %.2f hab/km²\n", densidade_populacional2);
+   printf ("PIB per capita é : %.2f bilhões de reais\n", pib_per_capita2);
 
 
 
 
     printf ("\n\n");
-    printf ("Fim do jogo!\n\n\n");
+    printf ("--- Fim do jogo! ---\n\n\n");
 
  
 
@@ -119,6 +129,5 @@ int main (){
 
 
 }
-    
 
         
