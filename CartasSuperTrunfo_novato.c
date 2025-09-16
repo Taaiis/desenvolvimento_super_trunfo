@@ -20,7 +20,6 @@ int main (){
    
    
 
-
     printf ("***** Super Trunfo de cidades *****\n\n\n");
     printf ("   Vamos lá!\n\n ");
     printf ("   GO!   \n\n");
